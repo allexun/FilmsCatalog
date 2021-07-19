@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/default_nav_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="ru.cadmean.filmscatalog.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_filmsListFragment"
+            app:destination="@id/filmsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmsListFragment"
+        android:name="ru.cadmean.filmscatalog.FilmsListFragment"
+        android:label="fragment_films_list"
+        tools:layout="@layout/fragment_films_list" />
+</navigation>
